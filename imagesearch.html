@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image</title>
+        <style>
+             html {
+                margin: 0px;
+                height: 100%;
+                width: 100%;
+            }
+
+            body {
+                margin: 0px;
+                min-height: 100%;
+                width: 100%;
+            }
+            .up {
+                text-align: right;
+                margin: 15px;
+                padding: 20px 10px;
+            }
+            .gomain {
+                padding: 10px;
+                height: 60px;
+            }
+            .center {
+                max-height: 92px;
+                position: relative;
+                text-align: center;           
+                height: 100%;
+                margin: 100px auto 18px;
+            }
+            .image {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                object-position: center bottom;
+                width: auto;
+            }
+            .blue {
+                color: #4487f6; 
+                font: 16px/16px roboto-regular, arial, sans-serif;
+                position: absolute;
+                left: 885px;
+                bottom: 0;  
+                
+            }
+            .box {
+                margin: 20px 20px 10px;
+                border-radius: 20px;
+                width: 500px;
+                z-index: 1;
+                outline: none;
+                padding: 13px 13px 13px 28px;
+                border: 1px solid #dfe1e5;
+            }
+            .box:hover{
+                box-shadow: 1px 1px 8px 1px #dcdcdc;
+            }
+            .press {
+                background-color: #f8f9fa;
+                border: #f8f9fa;
+                border-radius: 4px;
+                color: black;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                height: 36px;
+                min-width: 54px
+            }
+        </style>
+    </head>
+    <body style="background-color: #fff;">
+        <header class="up">
+            <span class="gomain">
+                <a href="file:///C:/Users/julis/Documents/CS50%20Web%20Programming/proyects/index.html">Google Search</a>
+            </span>
+        </header>
+        <div class="center">
+            <img class="image" src="https://images.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo Image" width="272px" height="92px">
+            <span class="blue">images</span>
+            <form action="https://images.google.com/images">
+                <div>
+                    <input class="box" type="text" name="q" id="box">
+                </div>
+                <div class="button">
+                    <input class="press" type="submit" name="button" value="Image Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

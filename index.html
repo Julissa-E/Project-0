@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            html {
+                margin: 0px;
+                height: 100%;
+                width: 100%; 
+            }
+            body {
+                margin: 0px;
+                min-height: 100%;
+                width: 100%;         
+            }
+            .up {
+                text-align: right;
+                margin: 15px;
+                padding: 20px 10px;
+            }
+            span {
+                margin: 1px;
+                padding: 10px;
+            }
+            .center{
+                max-height: 92px;
+                position: relative;
+                text-align: center;           
+                height: 100%;
+                margin: 100px auto 18px;
+            }
+            #box { 
+                margin: 20px 20px 10px;
+                border-radius: 20px;
+                width: 500px;
+                z-index: 1;
+                outline: none;
+                padding: 13px 13px 13px 28px;
+                border: 1px solid #dfe1e5;   
+            }
+            #box:hover {
+                box-shadow: 1px 1px 8px 1px #dcdcdc;
+            }
+            .press {
+                background-color: #f8f9fa;
+                border: #f8f9fa;
+                border-radius: 4px;
+                color: black;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                height: 36px;
+                min-width: 54px;
+            }
+        </style>
+    </head>
+    <body style="background-color: #fff">
+        <header class="up">
+            <span><a href="file:///C:/Users/julis/Documents/CS50%20Web%20Programming/proyects/imagesearch.html">Google Image Search</a></span>
+            <span><a href="file:///C:/Users/julis/Documents/CS50%20Web%20Programming/proyects/advancedsearch.html">Google Advance Search</a></span>
+        </header>
+        <div class="center">
+            <img src="https://images.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92">
+            <form action="https://www.google.com/search">
+            <div>
+                <input type="text" name="q" id="box">
+            </div>
+            <div class="button">
+                <input class="press" type="submit" name="button" value="Google Search">
+                <input class="press" type="submit" class="button" value="I'm feeling lucky" name="btnI">
+            </div>
+            </form>
+        </div>     
+    </body>
+</html>

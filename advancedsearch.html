@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+             html {
+                margin: 0px;
+                height: 100%;
+                width: 100%; 
+            }
+            body {
+                margin: 0px;
+                min-height: 100%;
+                width: 100%;
+            }
+            .up {
+                text-align: right;
+                margin: 15px;
+                padding: 20px 10px;
+            }
+            .gomain {
+                padding: 10px;
+                height: 60px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .title {
+                margin: 25px 35px;
+                
+            }
+            h4 {
+                color: #d93025; 
+                font-family: arial, sans-serif;
+                font-weight: inherit;
+                font-style: inherit;
+                font-size: 20px;
+            }
+            .line {
+                border-bottom: 1px solid #ebebeb;
+
+            }
+            .fill {
+                max-width: 1140px;
+                min-width: 200px;
+                width: 96%;
+                margin: 40px 2% 0 45px;
+                overflow: hidden;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .find {
+                min-width: 167px;
+                width: 16%;
+                font-size: 16px;
+                min-height: 42px;
+                font-weight: 500;
+                color: black;
+            }
+            .label {
+                float: left;
+                clear: both;
+                min-width: 167px;
+                width: 16%;
+                font-size: 13px;
+                min-height: 42px;
+                line-height: 16px;
+            }
+            .box {
+                float: left;
+                min-width: 167px;
+                min-height: 41px;
+                vertical-align: middle;
+                width: 50%;
+                                
+             }
+            .blanc {
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+                width: 100%;
+                outline: none;
+              
+            }
+            .play {
+                line-height: 100%;
+                height: 30px;
+                min-width: 120px;
+                background-color: #4d90fe;
+                border: 1px solid #3079ed;
+                color: #fff;
+                box-shadow: none;
+                border-radius: 2px;
+                font-size: 11px;
+                font-weight: bold;
+                white-space: nowrap;
+                margin: 10px 0;
+            }
+           
+            input:focus {
+                border: 1px solid #5A95F5;            
+            }
+        </style>
+    </head>
+    <body style="background-color: #fff;">
+        <header class="up">
+            <span class="gomain">
+                <a href="file:///C:/Users/julis/Documents/CS50%20Web%20Programming/proyects/index.html">Google Search</a>
+            </span>
+        </header>
+        <div class="title">
+            <h4>Advanced Search</h4>
+        </div>
+        <div class="line"></div>
+        <div class="fill">
+            <div class="find">
+                <span>Find pages with...</span>
+            </div>
+            <div>
+                <form action="http://google.com/search" method="GET" name="f">
+                    <div class="label">
+                        <label for="box1">all these words:</label>
+                    </div>
+                    <div class="box">    
+                        <input class="blanc" type="text" name="as_q" id="box1" autofocus >
+                    </div>
+                    <div class="label">    
+                        <label for="box2">this exact word or phrase:</label>
+                    </div>
+                    <div class="box">    
+                        <input class="blanc" type="text" name="as_epq" id="box2">
+                    </div>
+                    <div class="label">
+                        <label for="box3">any of these words:</label>
+                    </div> 
+                    <div class="box">   
+                        <input class="blanc" type="text" name="as_oq" id="=box3">
+                    </div>    
+                    <div class="label">
+                        <label for="box4">none of these words:</label>
+                    </div>
+                    <div class="box">
+                        <input class="blanc" type="text" name="as_eq" id="box4">
+                    </div>
+                    <div class="label"></div>
+                    <div class="box" style="text-align: right;">
+                        <input class= play type="submit" name="search" value="Advanced Search">
+                    </div>      
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
